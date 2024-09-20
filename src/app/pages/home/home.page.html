@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-row style="background: #971616 !important;">
+      <ion-col style="width: 100%;
+      height: 57px;text-align: center;margin:auto" size="2">
+        <ion-icon (click)="openmenu()"
+        style="color: white !important;margin-top: 8px;font-size: xx-large;" name="menu"></ion-icon>
+     </ion-col>
+          
+      <ion-col style="text-align: center;" size="8">
+        <img style="width:70%;" src='assets/img/header-final.svg' />
+      </ion-col>
+      <ion-col size="2" style="text-align: center;" >
+        <ion-icon class="noti" name="notifications"></ion-icon>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+<ion-card>
+  <ion-card-header>Terms and Conditions</ion-card-header>
+  <ion-card-content>{{posts.about}}</ion-card-content>
+</ion-card>
+</ion-content>
